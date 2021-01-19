@@ -81,8 +81,7 @@ def to_camel_case(underscore_str):
             elif i.isalpha() and check_point == 1 :
                 camelcase_str += i.lower() 
             elif i == '_' and check_point == 1 :
-                check_point = 2
-                camelcase_str +=' '
+                check_point = 2                
             elif i.isalpha() and check_point == 2 :
                 check_point = 1
                 camelcase_str += i.upper()
